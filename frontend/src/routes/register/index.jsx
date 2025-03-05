@@ -8,14 +8,22 @@ export default function Register() {
   return (
     <>
       <NavigationBar/>
-      <Container fluid className="vh-100 d-flex align-items-center">
-        <Row className="w-100 justify-content-center">
+      <Container fluid className="vh-100 d-flex justify-content-center align-items-center">
+        <Row className="w-50 justify-content-center">
           <Col md={6}>
             <Card className="shadow">
               <Card.Body>
                 <Form>
                   <Card.Title className="fs-2 text-center"><strong>Signup</strong></Card.Title>
                   <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Label>First Name</Form.Label>
+                    <Form.Control type="name" placeholder="Enter First Name" />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicName">
+                    <Form.Label>Last Name</Form.Label>
+                    <Form.Control type="name" placeholder="Enter Last Name" />
+                  </Form.Group>
+                  <Form.Group className="mb-3" controlId="formBasicName">
                     <Form.Label>Email address</Form.Label>
                     <Form.Control type="email" placeholder="Enter email" />
                   </Form.Group>

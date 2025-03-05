@@ -8,11 +8,11 @@ const NavigationBar = () => {
         <>
             <Navbar bg="light" data-bs-theme="light">
                 <Container>
-                    <Navbar.Brand href="#home"><strong>Security INC</strong></Navbar.Brand>
+                    <Navbar.Brand href="/#home"><strong>Security INC</strong></Navbar.Brand>
                     <Nav className="me-auto">
-                        <Nav.Link href="/"><strong>Home</strong></Nav.Link>
-                        <Nav.Link href="/register"><strong>Register</strong></Nav.Link>
+                        <Nav.Link className="me-auto" href="/#home"><strong>Home</strong></Nav.Link>
                         <Nav.Link href="/login"><strong>Login</strong></Nav.Link>
+                        <Nav.Link href="/register"><strong>Register</strong></Nav.Link>
                     </Nav>
                 </Container>
             </Navbar>

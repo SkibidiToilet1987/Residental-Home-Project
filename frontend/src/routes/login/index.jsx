@@ -4,12 +4,12 @@ import NavigationBar from '../../Components/nav'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 
-export default function Login() {
+export default function Login(){
   return (
     <>
       <NavigationBar/>
-      <Container fluid className="vh-100 d-flex align-items-center">
-        <Row className="w-100 justify-content-center">
+      <Container fluid className="vh-100 d-flex justify-content-center align-items-center">
+        <Row className="w-50 justify-content-center">
           <Col md={6}>
             <Card className="shadow">
               <Card.Body>
@@ -24,7 +24,7 @@ export default function Login() {
                     <Form.Control type="password" placeholder="Password" />
                   </Form.Group>
                   <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                    <Form.Check type="checkbox" label="Remember Me" />
+                    <Form.Check className="items-center"type="checkbox" label="Remember Me" />
                   </Form.Group>
                   <Button variant="primary" type="submit">
                     Submit
